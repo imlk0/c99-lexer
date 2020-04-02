@@ -455,6 +455,8 @@ void match(char *str, match_result_type &match_result) {
     match_result.length = strlen(str);
     generate_offset2length(str, match_result.offset2length);
 
+    match_result.error = false;
+
     int cur_pos = 0;
     bool error = false;
     int error_start = 0;
@@ -491,6 +493,7 @@ void match(char *str, match_result_type &match_result) {
             cur_pos += max_len;
         } else {
             if (!error) {
+                match_result.error = true;
                 error = true;
                 error_start = cur_pos;
             }

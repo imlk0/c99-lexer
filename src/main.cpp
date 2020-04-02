@@ -124,5 +124,6 @@ int main(int argc, const char **argv) {
     if (opt_statistics) {
         print_statistics_info(match_result);
     }
-    return 0;
+
+    return match_result.error;
 }

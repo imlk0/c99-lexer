@@ -35,6 +35,7 @@ struct lexeme_type {
 struct match_result_type {
     char *src_str;
     int length;
+    bool error;
     std::map<int, lexeme_type> offset2lexeme;
     std::map<int, int> offset2length;
 };
