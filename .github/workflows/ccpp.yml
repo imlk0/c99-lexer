@@ -15,8 +15,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: install xmake
       run: bash <(curl -fsSL https://xmake.io/shget.text)
-    - name: reload profile
-      run: source ~/.xmake/profile
+    - name: add xmake to path
+      run: echo "::add-path::~/.local/bin/"
     - name: xmake
       run: xmake
     - name: test
