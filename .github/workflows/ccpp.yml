@@ -15,7 +15,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: install xmake
       run: bash <(curl -fsSL https://xmake.io/shget.text)
+    - name: reload profile
+      run: source ~/.xmake/profile
     - name: xmake
-      run: make
+      run: xmake
     - name: test
       run: xmake r -w `pwd` lexical-analyzer -s ./test/test0.c 
