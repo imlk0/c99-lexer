@@ -1,5 +1,7 @@
 # lexical-analyzer
 
+![C/C++ CI](https://github.com/KB5201314/lexical-analyzer/workflows/C/C++%20CI/badge.svg)
+
 用C++实现的一个，基于C99标准的词法分析器
 
 ### feature
