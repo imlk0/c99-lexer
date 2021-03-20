@@ -1,4 +1,4 @@
-# lexical-analyzer
+# c99-lexer
 
 ![C/C++ CI](https://github.com/KB5201314/lexical-analyzer/workflows/C/C++%20CI/badge.svg)
 
