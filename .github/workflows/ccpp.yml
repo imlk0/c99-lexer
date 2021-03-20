@@ -15,9 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: install xmake
       run: bash <(curl -fsSL https://xmake.io/shget.text)
-    - name: add xmake to path
-      run: echo "::add-path::~/.local/bin/"
     - name: xmake
-      run: xmake
+      run: ~/.local/bin/xmake
     - name: test
-      run: xmake r -w `pwd` lexical-analyzer -s ./test/test0.c 
+      run: ~/.local/bin/xmake r -w `pwd` lexical-analyzer -s ./test/test0.c 
